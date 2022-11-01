@@ -1,0 +1,17 @@
+.Navfix{
+    @include basePage;
+    height: 300vh;
+    .top-Container{
+        width: 100vw;
+        height: 30px;
+        background-color: white;
+        position: relative;
+    }
+    .Nav{
+        text-align: center;
+        background-color: white;
+        width: 100vw;
+        height: 30px;
+        top: 0;
+    }
+}

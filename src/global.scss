@@ -1,0 +1,14 @@
+@mixin basePage{
+    background-color: #2C3E50;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.ElVerCenter {
+    display: flex;
+    align-items: center;
+}
+
+.space{
+    width: 10px;
+}

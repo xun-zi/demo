@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+
+.LoginPage{
+    @include basePage;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        border-radius: 10px;
+        background-color:rgb(237, 237, 237);
+        padding: 20px;
+        font-size: 13px;
+        .LoginBtn{
+            margin-top: 10px;
+            width: 100%;
+            border: 0;
+            background: linear-gradient(to right,red, orange, yellow);
+        }
+    }
+
+    input{
+        box-shadow: none;
+        border: none;
+        outline: none;
+        margin: 10px 0;
+        padding-left: 3px;
+    }
+
+    h1,h3{
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
