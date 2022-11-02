@@ -1,0 +1,29 @@
+.DragPicture{
+    @include basePage;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 600px;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        > .ElOut{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(200, 200, 200);
+            .El{
+                font-size: 40px;
+                line-height: 125px;
+                text-align: center;
+                width: 125px;
+                height: 125px;
+            }
+            .El--active{
+                border: dotted 4px yellow;
+                @extend .El;
+            }
+        }
+    }
+}
