@@ -2,9 +2,9 @@ import './DragPicture.scss'
 import React, { useEffect, useState } from 'react';
 const arrdef: number[] = [];
 for (let i = 0; i < 16; i++)arrdef.push(i);
+let start = 0;
 export default function DragPicture() {
 
-    let enter = 0;
     useEffect(() => {
     }, [])
 
@@ -17,32 +17,28 @@ export default function DragPicture() {
                     return (<div className='ElOut' key={index}>
                         <div className={isAct ? 'El--active' : 'El'} draggable='true'
                             onDragStart={function (e) {
-                                enter = index
+                                start = index
                                 setIsAct(true)
                             }}
                             onDragEnd={
                                 function (e) {
                                     setIsAct(false);
+                                }
+                            }
+                            onDrop={
+                                function (event) {
+                                    event.preventDefault();
                                     setArrEl((state) => {
                                         const temp = [...state];
-                                        temp[enter] = state[index];
-                                        temp[index] = state[enter];
+                                        temp[start] = state[index];
+                                        temp[index] = state[start];
                                         return temp;
                                     })
                                 }
                             }
-                            onDragEnter={
-                                function () {
-                                    enter = index
-                                }
-                            }
-                            onDrop={
-                                function(event){
-                                    event.preventDefault();
-                                    console.log(index);
-                                }
-                            }
-                            onDragOver={() => {}}
+                            onDragOver={(event) => {
+                                event.preventDefault();
+                            }}
                         >
                             {num}
                         </div>
