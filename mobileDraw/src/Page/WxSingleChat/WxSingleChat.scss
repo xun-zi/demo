@@ -1,0 +1,55 @@
+$secondary:rgb(237, 237, 237);
+.WxSingleChat{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $secondary;
+    .top{
+        background-color: $secondary;
+        width: 100%;
+    }
+    .content{
+        flex:1;
+        height: auto;
+        overflow: scroll;
+        .Mes{
+            padding: 5px 3px;
+            display: flex;
+            height: 50px;
+            .name{
+                font-size: 15px;
+                line-height: 10px;
+            }
+            .text{
+                font-family: -apple-system;
+                letter-spacing: 1px;
+                font-weight: 350;
+                font-size: 20px;
+                margin-top: 2px;
+                padding: 5px;
+                border-radius: 3px;
+                background-color: white;
+            }
+        }
+    }
+    .bottom{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        padding: 0 1px;
+        background-color: $secondary;
+        font-size: 30px;
+        > *{
+            padding: 0 3px;
+            height: 50%;
+        }
+
+        .sendMes{
+            flex: 1;
+            border: 0;
+            outline: none;
+        }
+    }
+}
