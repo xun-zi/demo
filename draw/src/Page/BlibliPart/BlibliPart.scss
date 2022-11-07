@@ -1,0 +1,23 @@
+.BlibliPart {
+    @include basePage;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 100vw;
+        height: 500px;
+        background-color: white;
+        overflow: hidden;
+
+        .carousel {
+            height: 362px;
+            width: 500px;
+            background-color: #364d79;
+            
+            .carouselEl {
+                background-size: cover;
+            }
+        }
+    }
+}

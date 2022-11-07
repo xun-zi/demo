@@ -1,0 +1,15 @@
+
+.BulletScreen{
+    @include basePage;
+    $bottomH:80px;
+    background-color: white;
+    .content{
+        height: calc(100vh - #{$bottomH});
+        background-color: white;
+    }
+    .bottom{
+        background-color: rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        height: $bottomH;
+    }
+}

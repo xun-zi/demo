@@ -12,6 +12,7 @@ $secondary:rgb(237, 237, 237);
         flex:1;
         height: auto;
         overflow: scroll;
+        overflow-anchor: none;
         .Mes{
             padding: 5px 3px;
             display: flex;

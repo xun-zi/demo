@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.scss'
+import '@/App.scss'
 import WxSingleChat from './Page/WxSingleChat/WxSingleChat'
 
 function App() {

@@ -1,0 +1,31 @@
+.DrawBoard {
+    @include basePage;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .canvas {
+        border: solid black 3px;
+        position: relative;
+    }
+
+    .left {
+        position: absolute;
+        border: solid black 3px;
+        padding: 20px;
+        border-radius: 5px;
+        top: 10px;
+        left: -100px;
+    }
+
+    .right{
+        position: absolute;
+        border: solid black 3px;
+        padding: 5px;
+        border-radius: 5px;
+        top: 10px;
+        right: -350px;
+    }
+}

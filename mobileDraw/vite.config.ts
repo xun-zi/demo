@@ -1,3 +1,4 @@
+// vite.config.ts
 import react from '@vitejs/plugin-react'
 import { defineConfig, normalizePath } from 'vite'
 import path from 'path'
@@ -13,5 +14,10 @@ export default defineConfig({
         additionalData: `@import "${variablePath}";`
       }
     }
+  },
+  resolve:{
+    alias: {
+      '@': path.resolve(path.resolve('./src')),
+    },
   }
 })
